@@ -9,13 +9,14 @@
         <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
         <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
         <link rel="stylesheet" type="text/css" href="css/all.css">
+        <link rel="stylesheet" type="text/css" href="index.css">
     </head>
 
     <body>
         <div class="wrapper">
             <div class="body-overlay"></div>
 
-            <div class="sidebar" id="sidebar">
+            <nav class="sidebar" id="sidebar">
                 <div class="sidebar-header">
                     <h3><span>TemmyCoder Designs</span></h3>
                 </div>
@@ -27,7 +28,7 @@
 
                     <div class="small-screen navbar-display">
                         <li class="dropdown d-lg-none d-md-block d-xl-none d-sm-block">
-                            <a href="#homeSubmenu0" data-bs-toggle="collapse" aria-expanded="false" class="navbar-toggle"></a>
+                            <a href="#homeSubmenu0" data-bs-toggle="collapse" aria-expanded="false" class="dropdown-toggle"></a>
                             <ul class="collapse list-unstyled menu" id="homeSubmenu0">
                                 <li><a href="#">You have 5 New Messages</a></li>
                                 <li><a href="#">You have 5 New Messages</a></li>
@@ -62,7 +63,7 @@
 
                     <li class="dropdown">
                         <a href="#pageSubmenu2" data-bs-toggle="collapse" aria-expanded="false" class="dropdown-toggle"> 
-                        <i class="fa fa-table-columns"></i><span>Widgets</span></a>
+                        <i class="fas fa-table-cells"></i><span>Widgets</span></a>
                         <ul class="collapse list-unstyled menu" id="pageSubmenu2">
                             <li><a href="#">Home 1</a></li>
                             <li><a href="#">Home 2</a></li>
@@ -72,7 +73,7 @@
 
                     <li class="dropdown">
                         <a href="#pageSubmenu3" data-bs-toggle="collapse" aria-expanded="false" class="dropdown-toggle"> 
-                        <i class="fa fa-bar-chart"></i><span>chart</span></a>
+                        <i class="fa fa-chart-simple"></i><span>chart</span></a>
                         <ul class="collapse list-unstyled menu" id="pageSubmenu3">
                             <li><a href="#">Home 1</a></li>
                             <li><a href="#">Home 2</a></li>
@@ -82,7 +83,7 @@
 
                     <li class="dropdown">
                         <a href="#pageSubmenu4" data-bs-toggle="collapse" aria-expanded="false" class="dropdown-toggle"> 
-                        <i class="fa fa-box"></i><span>ui Element</span></a>
+                        <i class="fa fa-puzzle-piece"></i><span>ui Element</span></a>
                         <ul class="collapse list-unstyled menu" id="pageSubmenu4">
                             <li><a href="#">Home 1</a></li>
                             <li><a href="#">Home 2</a></li>
@@ -92,7 +93,7 @@
 
                     <li class="dropdown">
                         <a href="#pageSubmenu5" data-bs-toggle="collapse" aria-expanded="false" class="dropdown-toggle"> 
-                        <i class="fa fa-create"></i><span>form</span></a>
+                        <i class="fa fa-edit"></i><span>form</span></a>
                         <ul class="collapse list-unstyled menu" id="pageSubmenu5">
                             <li><a href="#">Home 1</a></li>
                             <li><a href="#">Home 2</a></li>
@@ -102,7 +103,7 @@
 
                     <li class="dropdown">
                         <a href="#pageSubmenu6" data-bs-toggle="collapse" aria-expanded="false" class="dropdown-toggle"> 
-                        <i class="fa fa-"></i><span>tables</span></a>
+                        <i class="fa fa-table-cells"></i><span>tables</span></a>
                         <ul class="collapse list-unstyled menu" id="pageSubmenu6">
                             <li><a href="#">Home 1</a></li>
                             <li><a href="#">Home 2</a></li>
@@ -121,7 +122,7 @@
                     </li>
 
                     <li class="">
-                        <a href="#"><i class="fa fa-images"></i><span>copy</span></a>
+                        <a href="#"><i class="fa fa-folder"></i><span>copy</span></a>
                     </li>
 
                     <li class="">
@@ -129,7 +130,303 @@
                     </li>
 
                 </ul>
+            </nav>
+
+            <!---------Page content--------->
+            <div id="content">
+
+                <!---------top navbar design--------->
+                <div class="top-navbar">
+                    <nav class="navbar navbar-expand-lg">
+                        <button type="button" id="sidebar-collapse" class="d-xl-block d-lg-block d-md-none d-none">
+                            <span class="fa fa-angle-left"></span>
+                        </button>
+                        <a href="#" class="navbar-brand">Dashboard</a>
+                        <button class="d-inline-block d-lg-none ms-auto more-button" type="button" data-bs-toggle="collapse" data-target="#navbarcollapse" aria-controls="navbarcollapse" aria-expanded="false" aria-label="Toggle">
+                            <span class="fa fa-ellipsis-vertical"></span>
+                        </button>
+                        <div class="collapse navbar-collapse d-lg-block d-xl-block d-md-none d-sm-none d-none" id="navbarcollapse">
+                            <ul class="nav navbar-nav ms-auto">
+                                <li class="nav-item dropdown active">
+                                    <a href="#dropdown-menu" data-bs-toggle="dropdown" class="nav-link">
+                                        <span class="fa fa-bell"></span>
+                                        <span class="notifications">4</span>
+                                    </a>
+
+                                    <ul class="dropdown-menu show" id="dropdown-menu">
+                                        <li><a href="#">You have 4 New Messages</a></li>
+                                        <li><a href="#">You have 4 New Messages</a></li>
+                                        <li><a href="#">You have 4 New Messages</a></li>
+                                        <li><a href="#">You have 4 New Messages</a></li>
+                                    </ul>
+                                </li>
+        
+                                <li class="nav-item">
+                                    <a href="#"><i class="fab fa-app-store-ios"></i><span>apps</span></a>
+                                </li>
+        
+                                <li class="nav-item">
+                                    <a href="#"><i class="fa fa-user"></i><span>user</span></a>
+                                </li>
+        
+                                <li class="nav-item">
+                                    <a href="#"><i class="fa fa-gear"></i><span>settings</span></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+
+                <!--------Main-content-------->
+                <div class="main-content">
+                    <div class="row">
+                        <div class="col-lg-3 col-md-6 col-sm-6">
+                            <div class="card card-stats">
+                                <div class="card-header">
+                                    <div class="icon icon-warning">
+                                        <span class="fa fa-chart-simple"></span>
+                                    </div>
+                                </div>
+
+                                <div class="card-content">
+                                    <p class="category"><strong>visits</strong></p>
+                                    <h3 class="card-title">70,340</h3>
+                                </div>
+
+                                <div class="card-footer">
+                                    <div class="stats">
+                                        <i class="fa fa-info text-info"></i>
+                                        <a href="#">See detailed report</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-3 col-md-6 col-sm-6">
+                            <div class="card card-stats">
+                                <div class="card-header">
+                                    <div class="icon icon-rose">
+                                        <span class="fa fa-shopping-cart"></span>
+                                    </div>
+                                </div>
+
+                                <div class="card-content">
+                                    <p class="category"><strong>orders</strong></p>
+                                    <h3 class="card-title">102</h3>
+                                </div>
+
+                                <div class="card-footer">
+                                    <div class="stats">
+                                        <i class="fa fa-tag text-info"></i>
+                                        <a href="#">product-wise sales</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-3 col-md-6 col-sm-6">
+                            <div class="card card-stats">
+                                <div class="card-header">
+                                    <div class="icon icon-success">
+                                        <span class="fa fa-dollar"></span>
+                                    </div>
+                                </div>
+
+                                <div class="card-content">
+                                    <p class="category"><strong>Revenue</strong></p>
+                                    <h3 class="card-title">$23,100</h3>
+                                </div>
+
+                                <div class="card-footer">
+                                    <div class="stats">
+                                        <i class="far fa-calendar text-info"></i>
+                                        <a href="#">weekly sales</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-3 col-md-6 col-sm-6">
+                            <div class="card card-stats">
+                                <div class="card-header">
+                                    <div class="icon icon-info">
+                                        <span class="fa fa-person-walking-arrow-right"></span>
+                                    </div>
+                                </div>
+
+                                <div class="card-content">
+                                    <p class="category"><strong>Followers</strong></p>
+                                    <h3 class="card-title">+1430</h3>
+                                </div>
+
+                                <div class="card-footer">
+                                    <div class="stats">
+                                        <i class="fa fa-clock-rotate-left fa-flip-horizontal text-info"></i>
+                                        <a href="#">just updated</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-lg-7 col-md-12">
+                            <div class="card" style="min-height: 485px;">
+                                <div class="card-header card-header-text">
+                                    <h4 class="card-title">Employees Stats</h4>
+                                    <p class="category">New Employees on 16th December, 2016</p>
+                                </div>
+
+                                <div class="card-content table-responsive">
+                                    <table class="table table-hover">
+                                        <thead>
+                                            <tr>
+                                                <th>ID</th>
+                                                <th>Name</th>
+                                                <th>Salary</th>
+                                                <th>Country</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>1</td>
+                                                <td>Bob Willins</td>
+                                                <td>$23,564</td>
+                                                <td>Amsterdam</td>
+                                            </tr>
+                                            <tr>
+                                                <td>2</td>
+                                                <td>Mike Tyson</td>
+                                                <td>$13,564</td>
+                                                <td>Ireland</td>
+                                            </tr>
+                                            <tr>
+                                                <td>3</td>
+                                                <td>Tim Sebastian</td>
+                                                <td>$41,728</td>
+                                                <td>USA</td>
+                                            </tr>
+                                            <tr>
+                                                <td>4</td>
+                                                <td>Phillip morris</td>
+                                                <td>$31,124</td>
+                                                <td>Netherlands</td>
+                                            </tr>
+                                            <tr>
+                                                <td>5</td>
+                                                <td>Minerva Boopa</td>
+                                                <td>$29,153</td>
+                                                <td>korea</td>
+                                            </tr>
+                                            <tr>
+                                                <td>6</td>
+                                                <td>Bulk Bohan</td>
+                                                <td>$57,822</td>
+                                                <td>Canada</td>
+                                            </tr>
+                                            <tr>
+                                                <td>7</td>
+                                                <td>Adam Foster</td>
+                                                <td>$36,784</td>
+                                                <td>Australia</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-5 col-md-12">
+                            <div class="card" style="min-height: 485px;">
+                                <div class="card-header card-header-text">
+                                    <h4 class="card-title">Activities</h4>
+                                </div>
+
+                                <div class="card-content">
+                                    <div class="steamline">
+                                        <div class="sl-item sl-primary">
+                                            <div class="sl-content">
+                                                <small class="text-muted">5 min Ago</small>
+                                                <p>Willins has just joined projects</p>
+                                            </div>
+                                        </div>
+                                        <div class="sl-item sl-danger">
+                                            <div class="sl-content">
+                                                <small class="text-muted">25 min Ago</small>
+                                                <p>Willins has just joined projects</p>
+                                            </div>
+                                        </div>
+                                        <div class="sl-item sl-success">
+                                            <div class="sl-content">
+                                                <small class="text-muted">40 min Ago</small>
+                                                <p>Willins has just team joined projects</p>
+                                            </div>
+                                        </div>
+                                        <div class="sl-item">
+                                            <div class="sl-content">
+                                                <small class="text-muted">45 min Ago</small>
+                                                <p>Willins has just team joined projects</p>
+                                            </div>
+                                        </div>
+                                        <div class="sl-item sl-warning">
+                                            <div class="sl-content">
+                                                <small class="text-muted">55 min Ago</small>
+                                                <p>Willins Just shared a folder with you</p>
+                                            </div>
+                                        </div>
+                                        <div class="sl-item">
+                                            <div class="sl-content">
+                                                <small class="text-muted">60 min Ago</small>
+                                                <p>Willins has just joined projects</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-------------footer------------>
+                <footer class="footer">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <nav class="d-flex justify-content-center justify-content-md-start">
+                                    <ul class="m-0 p-0">
+                                        <li><a href="#" id="">Home</a></li>
+                                        <li><a href="#" id="">Company</a></li>
+                                        <li><a href="#" id="">Portfolio</a></li>
+                                        <li><a href="#" id="">Blogs</a></li>
+                                    </ul>
+                                </nav>
+                            </div>
+                            <div class="col-md-6">
+                                <p class="copyright d-flex justify-content-md-end justify-content-center">
+                                    &copy; 2024 Design By &nbsp;
+                                    <a href="http://github.com/TemmyCoder">TemmyCoder</a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </footer>
             </div>
         </div>
     </body>
+
+    <script type="text/javascript" src="js/all.js"></script>
+    <script type="text/javascript" src="js/bootstrap.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.js" integrity="sha512-+k1pnlgt4F1H8L7t3z95o3/KO+o78INEcXTbnoJQ/F2VqDVhWoaiVml/OEHv9HsVgxUaVW+IbiZPUJQfF/YxZw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script>
+        $(document) .ready(function(){
+            $("#sidebar-collapse") .on("click",function(){
+                $("#sidebar").toggleClass('active');
+                $("#content").toggleClass('active');
+            });
+
+            $(".more-button,.body-overlay") .on("click",function(){
+                $("#sidebar,.body-overlay") .toggleClass('show-nav');
+            });
+        });
+    </script>
 </html>
