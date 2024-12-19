@@ -39,7 +39,7 @@ button:focus{
     font-size: larger;
 }
 
-ul,ol{
+ul , ol{
     margin: 0;
     padding: 0;
     list-style: none;
@@ -55,6 +55,14 @@ a,a:hover,a:focus{
     position: relative;
     width: 100%;
     overflow: auto;
+}
+
+/* logo styling start */
+
+.sidebar-header img {
+    border-radius: 100%;
+    width: 45px;
+    margin-right: 10px;
 }
 
 /*Sidebar Styling Start*/
@@ -97,8 +105,8 @@ a,a:hover,a:focus{
     display: block;
 }
 
-#sidebar,.sidebar-header{
-    padding: 15px;
+#sidebar .sidebar-header{
+    padding: 20px;
     background-color: #fff;
     border-bottom: 1px solid #eee;
 }
@@ -110,7 +118,6 @@ a,a:hover,a:focus{
     text-transform: uppercase;
     transition: all 0.5s ease;
     font-weight: 600;
-    text-align: center;
 }
 
 #sidebar ul li{
@@ -210,6 +217,7 @@ a,a:hover,a:focus{
     text-align: center;
     line-height: 45px;
     margin-right: 20px;
+    margin-left: 20px;
     border: none;
     color: #fff;
     background-color: rgba(0, 0, 0, 0.9);
