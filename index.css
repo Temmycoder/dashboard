@@ -37,9 +37,10 @@ button:focus{
 .fa-ellipsis-vertical{
     color: #fff;
     font-size: larger;
+    padding-right: 15px;
 }
 
-ul , ol{
+ul,ol{
     margin: 0;
     padding: 0;
     list-style: none;
@@ -61,8 +62,8 @@ a,a:hover,a:focus{
 
 .sidebar-header img {
     border-radius: 100%;
-    width: 45px;
-    margin-right: 10px;
+    min-width: 45px;
+    margin-right: 0px;
 }
 
 /*Sidebar Styling Start*/
@@ -164,7 +165,7 @@ a,a:hover,a:focus{
     padding-left: 10px;
 }
 
-#sidebar ul li a i{
+#sidebar ul li a{
     position: relative;
     margin-right: 10px;
     top: 5px;
@@ -220,7 +221,7 @@ a,a:hover,a:focus{
     margin-left: 20px;
     border: none;
     color: #fff;
-    background-color: rgba(0, 0, 0, 0.9);
+    background-color: rgba(0, 0, 0, 0.2);
 }
 
 #sidebar-collapse span {
@@ -240,8 +241,8 @@ a,a:hover,a:focus{
 
 .navbar .notification{
     position: absolute;
-    top: 5px;
-    right: 10px;
+    top: 7px;
+    right: 0;
     display: block;
     font-size: 10px;
     border: 0;
@@ -280,6 +281,22 @@ a,a:hover,a:focus{
     padding: 10px 15px;
 }
 
+/* icon styling start */
+
+.material{
+    font-size: 22px !important;
+
+}
+
+.logo{
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    text-align: center;
+}
+
+.nav-item span{
+    padding-left: 6px;
+}
 /* content inner-card design start */
 
 .card{
@@ -609,4 +626,8 @@ footer .copyright {
         transition: all 150ms linear;
         background-color: rgba(0, 0, 0, 0.6);
     }
+
+    .navbar-brand{
+        padding: 0 0 0 20px;
+    }    
 }
