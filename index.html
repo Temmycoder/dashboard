@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Dashboard</title>
+        <title>Admin Dashboard</title>
         <meta name="generator" content="Hugo 0.122.0">
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -31,7 +31,9 @@
 
                     <div class="small-screen navbar-display">
                         <li class="dropdown d-lg-none d-md-block d-xl-none d-sm-block">
-                            <a href="#homeSubmenu0" data-bs-toggle="collapse" aria-expanded="false" class="dropdown-toggle"></a>
+                            <a href="#homeSubmenu0" data-bs-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
+                                <i class="fa material fa-bell"></i><span>4 Notifications</span>
+                            </a>
                             <ul class="collapse list-unstyled menu" id="homeSubmenu0">
                                 <li><a href="#">You have 5 New Messages</a></li>
                                 <li><a href="#">You have 5 New Messages</a></li>
@@ -58,19 +60,19 @@
                         <a href="#pageSubmenu1" data-bs-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
                         <i class="fa material fa-expand"></i><span>Layouts</span></a>
                         <ul class="collapse list-unstyled menu" id="pageSubmenu1">
-                            <li><a href="#">Home 1</a></li>
-                            <li><a href="#">Home 2</a></li>
-                            <li><a href="#">Home 3</a></li>
+                            <li><a href="#">Contacts</a></li>
+                            <li><a href="#">Maps</a></li>
+                            <li><a href="#">Invoice</a></li>
                         </ul>
                     </li>
 
                     <li class="dropdown">
                         <a href="#pageSubmenu2" data-bs-toggle="collapse" aria-expanded="false" class="dropdown-toggle"> 
-                        <i class="fa materials fa-table-cells"></i><span>Widgets</span></a>
+                        <i class="fa material fa-table-cells"></i><span>Widgets</span></a>
                         <ul class="collapse list-unstyled menu" id="pageSubmenu2">
-                            <li><a href="#">Home 1</a></li>
-                            <li><a href="#">Home 2</a></li>
-                            <li><a href="#">Home 3</a></li>
+                            <li><a href="#">E-commerce</a></li>
+                            <li><a href="#">Chat</a></li>
+                            <li><a href="#">Notes</a></li>
                         </ul>
                     </li>
 
@@ -144,19 +146,23 @@
                         <button type="button" id="sidebar-collapse" class="d-xl-block d-lg-block d-md-none d-none">
                             <span class="fa fa-angle-left"></span>
                         </button>
+                        
                         <a href="#" class="navbar-brand">Dashboard</a>
-                        <button class="d-inline-block d-lg-none ms-auto more-button" type="button" data-bs-toggle="collapse" data-target="#navbarcollapse" aria-controls="navbarcollapse" aria-expanded="false" aria-label="Toggle">
+
+                        <button class="d-inline-block d-lg-none ms-auto more-button" type="button" data-bs-toggle="collapse" 
+                        data-bs-target="#navbar-collapse" aria-controls="navbar-collapse" aria-expanded="false" aria-label="Toggle">
                             <span class="fa fa-ellipsis-vertical"></span>
                         </button>
-                        <div class="collapse navbar-collapse d-lg-block d-xl-block d-md-none d-sm-none d-none" id="navbarcollapse">
+
+                        <div class="collapse navbar-collapse d-lg-block d-xl-block d-md-none d-sm-none d-none" id="navbar-collapse">
                             <ul class="nav navbar-nav ms-auto">
-                                <li class="nav-item dropdown active">
-                                    <a href="#dropdown-menu" data-bs-toggle="dropdown" class="nav-link me-3">
+                                <li class="nav-item dropdown active bell-body me-4">
+                                    <a href="#dropdown-menu" data-bs-toggle="collapse" class="nav-link" role="button" aria-expanded="false">
                                         <span class="fa material fa-bell"></span>
                                         <span class="notification">4</span>
                                     </a>
 
-                                    <ul class="dropdown-menu show" id="dropdown-menu">
+                                    <ul class="collapse top-bell" id="dropdown-menu">
                                         <li><a href="#">You have 4 New Messages</a></li>
                                         <li><a href="#">You have 4 New Messages</a></li>
                                         <li><a href="#">You have 4 New Messages</a></li>
@@ -165,15 +171,15 @@
                                 </li>
         
                                 <li class="nav-item">
-                                    <a href="#"><i class="fa material fa-table-cells"></i><span>apps</span></a>
+                                    <a href="#" class="nav-link me-3"><i class="fa material fa-table-cells"></i><span>apps</span></a>
                                 </li>
         
                                 <li class="nav-item">
-                                    <a href="#"><i class="fa material fa-user"></i><span>user</span></a>
+                                    <a href="#" class="nav-link me-3"><i class="fa material fa-user"></i><span>user</span></a>
                                 </li>
         
-                                <li class="nav-item">
-                                    <a href="#"><i class="fa material fa-gear"></i><span>settings</span></a>
+                                <li class="nav-item me-3">
+                                    <a href="#" class="nav-link"><i class="fa material fa-gear"></i><span>settings</span></a>
                                 </li>
                             </ul>
                         </div>
@@ -294,43 +300,49 @@
                                             <tr>
                                                 <td>1</td>
                                                 <td>Bob Willins</td>
-                                                <td>$23,564</td>
+                                                <td>$80,000</td>
                                                 <td>Amsterdam</td>
                                             </tr>
                                             <tr>
                                                 <td>2</td>
                                                 <td>Mike Tyson</td>
-                                                <td>$13,564</td>
+                                                <td>$80,000</td>
                                                 <td>Ireland</td>
                                             </tr>
                                             <tr>
                                                 <td>3</td>
                                                 <td>Tim Sebastian</td>
-                                                <td>$41,728</td>
+                                                <td>$60,000</td>
                                                 <td>USA</td>
                                             </tr>
                                             <tr>
                                                 <td>4</td>
                                                 <td>Phillip morris</td>
-                                                <td>$31,124</td>
+                                                <td>$70,000</td>
                                                 <td>Netherlands</td>
                                             </tr>
                                             <tr>
                                                 <td>5</td>
                                                 <td>Minerva Boopa</td>
-                                                <td>$29,153</td>
+                                                <td>$60,000</td>
                                                 <td>korea</td>
                                             </tr>
                                             <tr>
                                                 <td>6</td>
                                                 <td>Bulk Bohan</td>
-                                                <td>$57,822</td>
+                                                <td>$80,000</td>
                                                 <td>Canada</td>
                                             </tr>
                                             <tr>
                                                 <td>7</td>
+                                                <td>Oluwatobiloba Sharon</td>
+                                                <td>$80,000</td>
+                                                <td>Canada</td>
+                                            </tr>
+                                            <tr>
+                                                <td>8</td>
                                                 <td>Adam Foster</td>
-                                                <td>$36,784</td>
+                                                <td>$70,000</td>
                                                 <td>Australia</td>
                                             </tr>
                                         </tbody>
@@ -350,37 +362,37 @@
                                         <div class="sl-item sl-primary">
                                             <div class="sl-content">
                                                 <small class="text-muted">5 min Ago</small>
-                                                <p>Willins has just joined projects</p>
+                                                <p>Andrew has just joined projects E.M.O</p>
                                             </div>
                                         </div>
                                         <div class="sl-item sl-danger">
                                             <div class="sl-content">
                                                 <small class="text-muted">25 min Ago</small>
-                                                <p>Willins has just joined projects</p>
+                                                <p>Patricia Added you to her team</p>
                                             </div>
                                         </div>
                                         <div class="sl-item sl-success">
                                             <div class="sl-content">
                                                 <small class="text-muted">40 min Ago</small>
-                                                <p>Willins has just team joined projects</p>
+                                                <p>Hizrian has finished his task</p>
                                             </div>
                                         </div>
                                         <div class="sl-item">
                                             <div class="sl-content">
                                                 <small class="text-muted">45 min Ago</small>
-                                                <p>Willins has just team joined projects</p>
+                                                <p>Adam shared a folder with you</p>
                                             </div>
                                         </div>
                                         <div class="sl-item sl-warning">
                                             <div class="sl-content">
                                                 <small class="text-muted">55 min Ago</small>
-                                                <p>Willins Just shared a folder with you</p>
+                                                <p>You just created a new task in Baseliner</p>
                                             </div>
                                         </div>
                                         <div class="sl-item">
                                             <div class="sl-content">
                                                 <small class="text-muted">60 min Ago</small>
-                                                <p>Willins has just joined projects</p>
+                                                <p>Felicia shred a Folder with you</p>
                                             </div>
                                         </div>
                                     </div>
@@ -405,7 +417,7 @@
                                 </nav>
                             </div>
                             <div class="col-md-6">
-                                <p class="copyright d-flex justify-content-md-end justify-content-center">
+                                <p class="copyright d-flex md-end justify-content-center">
                                     &copy; 2024 Design By &nbsp;
                                     <a href="http://github.com/TemmyCoder">TemmyCoder</a>
                                 </p>
@@ -419,17 +431,19 @@
 
     <script type="text/javascript" src="js/all.js"></script>
     <script type="text/javascript" src="js/bootstrap.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.js" integrity="sha512-+k1pnlgt4F1H8L7t3z95o3/KO+o78INEcXTbnoJQ/F2VqDVhWoaiVml/OEHv9HsVgxUaVW+IbiZPUJQfF/YxZw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script>
+    <script src="js/jquery-3.7.1.js"></script>
+    <script type="text/javascript">
+
         $(document) .ready(function(){
-            $("#sidebar-collapse") .on("click",function(){
-                $("#sidebar").toggleClass('active');
-                $("#content").toggleClass('active');
+            $("#sidebar-collapse") .on('click',function(){
+                $('#sidebar') .toggleClass('active');
+                $('#content') .toggleClass('active');
             });
 
-            $(".more-button,.body-overlay") .on("click",function(){
+            $(".more-button,.body-overlay") .on('click',function(){
                 $("#sidebar,.body-overlay") .toggleClass('show-nav');
             });
         });
+
     </script>
 </html>

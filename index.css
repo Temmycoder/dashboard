@@ -46,7 +46,7 @@ ul,ol{
     list-style: none;
 }
 
-a,a:hover,a:focus{
+a, a:hover, a:focus{
     color: #333;
     text-decoration: none;
     transition: all 0.3s;
@@ -75,7 +75,7 @@ a,a:hover,a:focus{
     left: 0;
     bottom: 0;
     z-index: 11;
-    width: 260px;
+    width: 240px;
     overflow: auto;
     transition: all 0.3s;
     background-color: #fff;
@@ -235,13 +235,22 @@ a,a:hover,a:focus{
     background-color: rgba(0 0 0 0.08);
 }
 
-.navbar-nav > li a{
+.navbar-nav > li a.nav-link{
     color: #fff;
+}
+
+.navbar-nav > li a.nav-link:hover{
+    color: #222222;
+}
+
+.bell-body{
+    background-color: rgba(0, 0, 0, 0.13);
+    padding: 0 5px;
 }
 
 .navbar .notification{
     position: absolute;
-    top: 7px;
+    top: 6px;
     right: 0;
     display: block;
     font-size: 10px;
@@ -253,6 +262,20 @@ a,a:hover,a:focus{
     height: 15px;
     border-radius: 2px;
     line-height: 14px;
+}
+
+.top-bell{
+    position: absolute;
+    background-color: white;
+    min-width: 235px;
+    height: auto;
+    color: #222222!important;
+    border: 1px solid #d0d9d9;
+    list-style: none;
+    border-radius: 10px;
+    font-size: smaller;
+    transition: all 150ms linear;
+    right: 0;
 }
 
 .navbar-nav > li.show .dropdown-menu{
@@ -297,18 +320,17 @@ a,a:hover,a:focus{
 .nav-item span{
     padding-left: 6px;
 }
+
 /* content inner-card design start */
 
 .card{
-    margin: 10px 0;
     border-radius: 0px!important;
     display: inline-block;
     position: relative;
     border: none;
     width: 100%;
-    margin: 15px  0;
+    margin: 15px 0;
     box-shadow: rgb(0 0 0 / 8%);
-    border-radius: 6px;
     color: rgba(0 0 0 0.87);
 }
 
@@ -384,19 +406,20 @@ a,a:hover,a:focus{
     margin-bottom: 0;
 }
 
-.card .category:not([class="text"]) {
+.card .category :not([class="text-info"]) {
     color:#555555;
     font-size: 14px;
     font-weight: 400;
 }
 
-.card .card-title:not([class='.card-calendar .card-title']) {
+.card .card-title{
     margin-top: 0;
     margin-bottom: 5px;
 }
 
 .card-stats .card-title {
     margin: 0;
+    font-size: 22px!important;
 }
 
 .card .card-footer .stats{
@@ -520,10 +543,22 @@ footer ul li a {
     position: relative;
 }
 
+footer ul li a:hover{
+    color: #188ae2;
+}
+
 footer .copyright {
     padding: 15px;
     font-size: 14px;
     margin: 0;
+}
+
+footer .copyright a{
+    font-size: medium;
+}
+
+footer .copyright a:hover{
+    color: #188ae2;
 }
 
 #sidebar.show-nav,.body-overlay.show-nav{
@@ -564,7 +599,7 @@ footer .copyright {
      }
 
      #content{
-        width: calc(100% - 260px);
+        width: calc(100% - 240px);
         position: relative;
         float: right;
         transition: all 0.3s;
@@ -581,23 +616,10 @@ footer .copyright {
         background-color: white;
         width: 180px;
         height: auto;
-        margin: 5px 0;
-        top: 0;
         border: 1px solid #d0d9d9;
+        border-radius: 7px;
         z-index: 4;
-     }
-
-     .dropdown-menu{
-        border: 0;
-        box-shadow: 0 2px 5px 0 rgb(0 0 0 / 26%, 0);
-        transform: translate3d(0 -20px 0);
-        visibility: hidden;
-        transition: all 150ms linear;
-        display: block;
-        min-width: 15rem;
-        right: 0;
-        left: auto;
-        opacity: 0;
+        transform: translatey(-20%);
      }
 }
 
